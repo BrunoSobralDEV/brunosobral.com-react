@@ -26,7 +26,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body{
-    background: radial-gradient(white, #3e6472ab);
+    background: radial-gradient(#fff, #58aac9ab);
     /* background-image: radial-gradient(#242424 2px, #121212 2px); */
     color: var(--text);
 
