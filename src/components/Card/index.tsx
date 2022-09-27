@@ -1,11 +1,11 @@
 import { GithubLogo, Link } from 'phosphor-react'
 
-import imgWallet from '../../assets/wallet.png'
 import { StyledSection } from './styles'
 import iconReact from "../../assets/react-icon.svg"
 import iconTypescript from "../../assets/typescript-icon.svg"
 import iconSc from "../../assets/sc.png"
 import iconRb from "../../assets/react-bootstrap.svg"
+import iconFirebase from "../../assets/firebase.png"
 
 interface ICard {
   title: string;
@@ -34,6 +34,7 @@ export default function Card({title, imgSrc, label, demoLink, gitLink}: ICard) {
           <img src={iconTypescript} alt="typescript-icon" style={{width: '35px'}} />
           <img src={iconRb} alt="node-icon" style={{width: '35px'}} />
           <img src={iconSc} alt="node-icon" style={{width: '35px'}} />
+          <img src={iconFirebase} alt="node-icon" style={{width: '35px'}} />
         </div>
         <div>
           <a href={demoLink}><Link size={32} />Demo</a>
