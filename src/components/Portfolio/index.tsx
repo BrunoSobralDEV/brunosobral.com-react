@@ -16,7 +16,7 @@ export default function Portfolio() {
   return (
     <Card 
       title="Wallet" 
-      label="Sistema de Gestão Financeira apresentado como Projeto Final para o Bootcamp Dev For Tech. Se trata de uma Aplicação Web Fullstack responsiva que organiza e facilita o controle das finanças pessoais através de um dashboard intuitivo, com gráficos e relatórios em PDF."
+      label="Sistema para Controle Financeira desenvolvido no Bootcamp Dev For Tech. Aplicação Web responsiva, desenvolvida em React e Typescript, com um dashboard onde é possível lançar despesas e receitas, visualizá-los através de gráficos, gerar relatórios detalhados e resumos em PDF."
       imgSrc={imgWallet}
       demoLink="https://myvallet.vercel.app"
       gitLink="https://github.com/BrunoSobralDEV/project-devfortech"
