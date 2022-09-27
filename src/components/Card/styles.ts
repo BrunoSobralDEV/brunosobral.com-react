@@ -51,6 +51,10 @@ export const StyledSection = styled.section`
       align-items: center;
       text-decoration: none;
       color: #7c8181;
+
+      &:hover {
+        text-shadow: 0 0 4px yellow;
+      }
     }
   }
 `
