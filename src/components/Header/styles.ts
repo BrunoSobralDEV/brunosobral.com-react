@@ -32,11 +32,14 @@ export const StyledHeader = styled.header`
     }
   }
 `
+interface StyledProps {
+  isOpenMenu: boolean;
+}
 
 export const StyledContainer =  styled.div`
   position: fixed;
   top: 0;
-  left: ${({ isOpenMenu }) => (isOpenMenu ? '0' : '-100%')};
+  left: ${({ isOpenMenu }: StyledProps) => (isOpenMenu ? '0' : '-100%')};
   width: 100%;
   height: 100vh;
   display: flex;
@@ -44,7 +47,7 @@ export const StyledContainer =  styled.div`
   justify-content: center;
   align-items: center;
   transition: 1s;
-  z-index: 1;
+  z-index: 3;
   
   .toggleClose {
     position: absolute;

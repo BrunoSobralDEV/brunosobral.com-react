@@ -10,9 +10,14 @@ import iconTypescript from "../../assets/typescript-icon.svg"
 import iconSc from "../../assets/sc.png"
 import iconRb from "../../assets/react-bootstrap.svg"
 import iconFirebase from "../../assets/firebase.png"
+import iconTailwind from '../../assets/tailwind.png'
+import iconPhosphor from '../../assets/phosphor.png'
+import iconVtex from '../../assets/vtex.png'
 
 import imgWallet from '../../assets/wallet.png'
-import imgHC from '../../assets/hiring-coders.png'
+import imgHC from '../../assets/hiringCoders.png'
+import gifHC from '../../assets/hiringCoders.gif'
+import mp4HC from '../../assets/hiringCoders.mp4'
 import imgDM from '../../assets/dtmoney.png'
 import imgFeedback from '../../assets/feedback.png'
 import gifFeedback from '../../assets/feedback-gif.gif'
@@ -43,11 +48,10 @@ export default function Portfolio() {
           <Card 
             title="Vtex E-commerce" 
             label="E-commerce desenvolvido no HiringCoders da VTEX. Ficamos em 5º lugar dentre os 15 mil participantes. Diferencial: no carrinho de compras é oferecido uma outra peça, montando um combo, caso seja uma compra recorrente."
-            imgSrc={imgHC}
-            icons={[iconReact,iconTypescript]}
-            demoLink="https://www.youtube.com/watch?v=uOHKTYh0xI4&ab_channel=AffonsoK"
+            videoSrc={mp4HC}
+            icons={[iconReact,iconTypescript,iconVtex]}
             gitLink="https://github.com/BrunoSobralDEV/final-challenge-hc"
-          />
+          />  
         </div>
         <div>
           <Card 
@@ -55,7 +59,6 @@ export default function Portfolio() {
             label=""
             imgSrc={imgDM}
             icons={[iconReact,iconTypescript]}
-            demoLink="https://github.com/BrunoSobralDEV/dtMoney"
             gitLink="https://github.com/BrunoSobralDEV/dtMoney"
           />
         </div>
@@ -64,8 +67,7 @@ export default function Portfolio() {
             title="Feedback Widget" 
             label=""
             imgSrc={imgFeedback}
-            icons={[iconReact,iconTypescript]}
-            demoLink="https://github.com/BrunoSobralDEV/dtMoney"
+            icons={[iconReact, iconTypescript,iconTailwind, iconPhosphor]}
             gitLink="https://github.com/BrunoSobralDEV/dtMoney"
           />
         </div>

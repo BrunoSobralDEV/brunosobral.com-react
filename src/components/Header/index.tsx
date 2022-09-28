@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom'
-import { useState } from 'react'
 import { List, X } from 'phosphor-react'
 import { StyledHeader, StyledContainer } from "./styles"
 
