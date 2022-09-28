@@ -36,8 +36,8 @@ export default function Card({title, imgSrc, label, demoLink, gitLink}: ICard) {
           <img src={iconFirebase} alt="node-icon" style={{width: '35px'}} />
         </div>
         <div>
-          <a href={demoLink}><Link size={32} />Demo</a>
-          <a href={gitLink}><GithubLogo size={32} /> Repositório</a>
+          <a href={demoLink} target="_blank"><Link size={32} />Demo</a>
+          <a href={gitLink} target="_blank"><GithubLogo size={32} /> Repositório</a>
         </div>
       </footer>
     </StyledSection>
