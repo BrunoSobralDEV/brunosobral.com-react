@@ -1,11 +1,7 @@
 import { GithubLogo, Link } from 'phosphor-react'
 
 import { StyledSection } from './styles'
-import iconReact from "../../assets/react-icon.svg"
-import iconTypescript from "../../assets/typescript-icon.svg"
-import iconSc from "../../assets/sc.png"
-import iconRb from "../../assets/react-bootstrap.svg"
-import iconFirebase from "../../assets/firebase.png"
+
 
 interface ICard {
   title: string;
@@ -13,31 +9,31 @@ interface ICard {
   label: string;
   demoLink: string;
   gitLink: string;
+  icons?: string[];
 }
 
-export default function Card({title, imgSrc, label, demoLink, gitLink}: ICard) {
+export default function Card(props: ICard) {
   return (
     <StyledSection>
-      <header><h1>{title}</h1></header>
+      <header><h1>{props.title}</h1></header>
       <main>
         <div>
-          <img src={imgSrc} alt="" />
+          <img src={props.imgSrc} alt="" />
           <div>
-            <label>{label}</label>
+            <label>{props.label}</label>
           </div>
         </div>
       </main>
       <footer>
         <div>
-          <img src={iconReact} alt="react-icon" style={{width: '35px'}} />
-          <img src={iconTypescript} alt="typescript-icon" style={{width: '35px'}} />
-          <img src={iconRb} alt="node-icon" style={{width: '35px'}} />
-          <img src={iconSc} alt="node-icon" style={{width: '35px'}} />
-          <img src={iconFirebase} alt="node-icon" style={{width: '35px'}} />
+          {!props.icons ? null : 
+            props.icons.map((icon) => 
+              (<img src={icon} alt="tech-icon" style={{width: '35px'}} />)
+            )}
         </div>
         <div>
-          <a href={demoLink} target="_blank"><Link size={32} />Demo</a>
-          <a href={gitLink} target="_blank"><GithubLogo size={32} /> Repositório</a>
+          <a href={props.demoLink} target="_blank"><Link size={32} />Demo</a>
+          <a href={props.gitLink} target="_blank"><GithubLogo size={32} /> Repositório</a>
         </div>
       </footer>
     </StyledSection>
