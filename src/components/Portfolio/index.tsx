@@ -41,7 +41,7 @@ export default function Portfolio() {
   if(isLoading) return <Loading/>
   return (
     <div>
-      <ReactCardCarousel autoplay={true} autoplay_speed={10000}>
+      <ReactCardCarousel autoplay={true} autoplay_speed={100000}>
         <div>
           <Card 
             title="Wallet" 

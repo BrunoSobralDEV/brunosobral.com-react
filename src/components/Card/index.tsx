@@ -24,7 +24,6 @@ export default function Card({title, imgSrc, label, demoLink, gitLink}: ICard) {
           <img src={imgSrc} alt="" />
           <div>
             <label>{label}</label>
-            {/* <label>Sistema de Gestão Financeira apresentado como Projeto Final para o Bootcamp Dev For Tech. Se trata de uma Aplicação Web Fullstack responsiva que organiza e facilita o controle das finanças pessoais através de um dashboard intuitivo, com gráficos e relatórios em PDF.</label> */}
           </div>
         </div>
       </main>
