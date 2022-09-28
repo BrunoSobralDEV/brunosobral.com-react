@@ -18,12 +18,12 @@ export function Header({isOpenMenu, toggleMenu, openMain, openPortfolio}: Header
       </StyledHeader>
       <StyledContainer isOpenMenu={isOpenMenu} className="navigation">
         <div className="toggleClose" onClick={toggleMenu}><X size={32} /></div>
-        <div className="banner"></div>
+        {/* <div className="banner"></div> */}
         <div className="navLink">
           <ul>
             <li><a href="#" className="btnMenu" onClick={() => {toggleMenu(); openMain();}}>Home</a></li>
-            <li><a href="./resume-cv.html">About</a></li>
-            <li><a href="#" onClick={toggleMenu}>Services</a></li>
+            {/* <li><a href="./resume-cv.html">About</a></li> */}
+            {/* <li><a href="#" onClick={toggleMenu}>Services</a></li> */}
             <li><a href='#' onClick={() => {toggleMenu(); openPortfolio();}}>Portfolio</a></li>
             <li><a href="mailto:brunosobralss@hotmail.com">Contact</a></li>
           </ul>

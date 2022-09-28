@@ -12,7 +12,4 @@ export const StyledContainer =  styled.div`
   align-items: center;
   transition: 1s;
   
-  .active {
-    left: 0;
-  }
 `

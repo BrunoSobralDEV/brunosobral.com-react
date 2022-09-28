@@ -13,6 +13,7 @@ import iconFirebase from "../../assets/firebase.png"
 import iconTailwind from '../../assets/tailwind.png'
 import iconPhosphor from '../../assets/phosphor.png'
 import iconVtex from '../../assets/vtex.png'
+import iconAws from '../../assets/aws.png'
 
 import imgWallet from '../../assets/wallet.png'
 import imgHC from '../../assets/hiringCoders.png'
@@ -49,7 +50,7 @@ export default function Portfolio() {
             title="Vtex E-commerce" 
             label="E-commerce desenvolvido no HiringCoders da VTEX. Ficamos em 5º lugar dentre os 15 mil participantes. Diferencial: no carrinho de compras é oferecido uma outra peça, montando um combo, caso seja uma compra recorrente."
             videoSrc={mp4HC}
-            icons={[iconReact,iconTypescript,iconVtex]}
+            icons={[iconReact,iconTypescript,iconAws,iconVtex]}
             gitLink="https://github.com/BrunoSobralDEV/final-challenge-hc"
           />  
         </div>

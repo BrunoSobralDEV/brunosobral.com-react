@@ -41,6 +41,8 @@ export const StyledSection = styled.section`
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
+    
+    
 
     div {
       display: flex;

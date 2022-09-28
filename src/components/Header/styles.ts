@@ -10,6 +10,12 @@ export const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   transition: 0.5s;
+  z-index: 3;
+  
+  
+  @media (max-width: 800px) { 
+    padding: 20px 20px;
+  }
 
   .toggle {
     cursor: pointer;
@@ -40,7 +46,7 @@ export const StyledContainer =  styled.div`
   position: fixed;
   top: 0;
   left: ${({ isOpenMenu }: StyledProps) => (isOpenMenu ? '0' : '-100%')};
-  width: 100%;
+  width: 20%;
   height: 100vh;
   display: flex;
   background: #333;
@@ -48,7 +54,9 @@ export const StyledContainer =  styled.div`
   align-items: center;
   transition: 1s;
   z-index: 3;
-  
+  @media (max-width: 800px) {
+    width: 100%;
+  }
   .toggleClose {
     position: absolute;
     top: 40px;
@@ -69,7 +77,7 @@ export const StyledContainer =  styled.div`
 
   .navLink {
     position: relative;
-    width: 50%;
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -88,8 +96,8 @@ export const StyledContainer =  styled.div`
           font-size: 2em;
           font-weight: 500;
           text-decoration: none;
-          margin: 5px 0;
-          margin-left: 100px;
+          margin: 15px 0;
+          margin-left: 50px;
           display: inline-block;
           letter-spacing: 1px;
           text-transform: uppercase;

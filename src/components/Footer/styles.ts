@@ -9,6 +9,10 @@ export const StyledFooter = styled.footer`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+  @media (max-width: 800px) {
+      padding: 20px 15px;
+  }
 
   ul {
     position: relative;

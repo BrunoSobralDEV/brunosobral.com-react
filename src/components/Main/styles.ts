@@ -1,10 +1,30 @@
 import styled from 'styled-components'
 
+export const StyledApp = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+
+  position: relative;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+
+  transition: 1s;
+  align-items: center;
+`
+
 export const StyledMain = styled.main`
   display: flex;
   justify-content: space-between;
   align-items: center;
   
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+
   .imgBx {
     position: relative;
     min-width: 500px;
@@ -15,12 +35,28 @@ export const StyledMain = styled.main`
       border-radius: 50%;
       box-shadow: 7px 9px 9px rgba(0,0,0,.3);
     }
+
+    img {
+      @media (max-width: 800px) {
+        height: 150px;
+      }
+    }
+
+    @media (max-width: 800px) {
+      min-width: 357px;
+      height: 164px;
+    }
   }
 
   .content {
     max-width: 700px;
     margin-left: 40px;
     
+    @media (max-width: 800px) {
+      max-width: 357px;
+      margin-left: 0px;
+    }
+
     h2 {
       font-weight: 500;
       letter-spacing: 1px;
@@ -43,7 +79,11 @@ export const StyledMain = styled.main`
     .btn-group {
       display: flex;
       gap: 15px;
+      @media (max-width: 800px) {
+        
+      }
     }
+
     .btn {
       position: relative;
       padding: 10px 20px;
@@ -62,6 +102,10 @@ export const StyledMain = styled.main`
 
       width: 235px;
       transition: all 1s;
+      @media (max-width: 800px) {
+        padding: 0;
+      }
+
       &:hover {
         filter: brightness(0.7);
       }
@@ -72,6 +116,10 @@ export const StyledMain = styled.main`
     display: flex;
     gap: 0.625em;
     margin-bottom: 2em;
+   
+    @media (max-width: 800px) {
+      gap: 0.4rem;
+    }
   }
 
   
