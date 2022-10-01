@@ -10,9 +10,6 @@ export const StyledFooter = styled.footer`
   justify-content: space-between;
   align-items: center;
   
-  @media (max-width: 800px) {
-      padding: 20px 15px;
-  }
 
   ul {
     position: relative;
@@ -39,4 +36,11 @@ export const StyledFooter = styled.footer`
   }
 
 
+  @media (max-width: 800px) {
+    padding: 20px 15px;
+
+    .desktop {
+      display: none;
+    }
+  }
 `

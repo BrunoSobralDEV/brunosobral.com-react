@@ -50,8 +50,8 @@ export default function Main() {
           </div>
 
           <div className="btn-group">
-            <a href="../../assets/Bruno_Santos_curriculo.pdf" className="btn"><FilePdf size={24} />Download CV</a>
-            <a href="#" className="btn" onClick={handleOpenPortfolio}> <ArrowRight size={24} /></a>
+            <a href="../../src/assets/Bruno_Santos_curriculo.pdf" className="btn" id="btnDownCv"><FilePdf size={24} /><span className='desktop'>Download CV</span></a>
+            <a href="#" className="btn" id="btnPortfolio" onClick={handleOpenPortfolio}> <ArrowRight size={24} /><span className='desktop'>Portfolio</span></a>
           </div>
           
         </div>

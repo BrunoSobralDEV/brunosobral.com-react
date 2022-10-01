@@ -15,7 +15,7 @@ export function Footer() {
         <li><a href="https://github.com/BrunoSobralDEV" target="_blank"><img src={imgGithub} alt="instagram-logo" /></a></li>
       </ul>
       
-      <p className="copyrightText">&lt;Code with <span>🤍</span> by Bruno Sobral /&gt;</p>
+      <p className="copyrightText">&lt;<span className="desktop">Code with <span>🤍</span> by </span>Bruno Sobral /&gt;</p>
     </StyledFooter>
   )
 }
