@@ -9,7 +9,7 @@ export const StyledApp = styled.section`
   position: relative;
   left: 0;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   padding: 100px;
 
   transition: 1s;

@@ -34,8 +34,8 @@ export default function Card(props: ICard) {
       <footer>
         <div>
           {!props.icons ? null : 
-            props.icons.map((icon) => 
-              (<img src={icon} alt="tech-icon" style={{height: '35px'}} />)
+            props.icons.map((icon, i) => 
+              (<img key={i} src={icon} alt="tech-icon" style={{height: '35px'}} />)
             )}
         </div>
         <div>
