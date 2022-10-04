@@ -1,20 +1,22 @@
 import styled from "styled-components";
 
-export const StyledDiv = styled.div`
+export const StyledDiv = styled.main`
   .desktop {
     display: none;
   }
   .mobile {
-    max-width: 600px;
+    width: 90vw;
     color: black;
-
-    ul {
-      max-width: 90vw;
-    }
   }
+
   @media( max-width: 800px) {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    
     .desktop {
       display: none;
     }
   }
+  
 `

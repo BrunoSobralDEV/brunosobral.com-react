@@ -17,7 +17,7 @@ import iconVtex from '../../assets/vtex.png'
 import iconAws from '../../assets/aws.png'
 
 import imgWallet from '../../assets/wallet.png'
-import imgHC from '../../assets/hiringCoders.png'
+import imgHC from '../../assets/hiring-coders.png'
 import gifHC from '../../assets/hiringCoders.gif'
 import mp4HC from '../../assets/hiringCoders.mp4'
 import imgDM from '../../assets/dtmoney.png'
@@ -97,15 +97,47 @@ export default function Portfolio() {
         </ReactCardCarousel>
       </div>
 
-      <div className="mobile">
-        <Carousel responsive={responsive}>
-          <div>Item 1</div>
-          <div>Item 2</div>
-          <div>Item 3</div>
-          <div>Item 4</div>
+      <div className='mobile'>
+        <Carousel responsive={responsive} arrows={false} showDots={true}>
+          <div style={{height: '60vh'}}>
+            <Card 
+              title="Wallet" 
+              label="Sistema."
+              imgSrc={imgWallet}
+              icons={[iconReact,iconTypescript, iconSc, iconRb, iconFirebase]}
+              demoLink="https://myvallet.vercel.app"
+              gitLink="https://github.com/BrunoSobralDEV/project-devfortech"
+            />
+          </div>
+          <div style={{height: '60vh'}}>
+          <Card 
+              title="Vtex E-commerce" 
+              label="E-commerce desenvolvido no HiringCoders da VTEX. Ficamos em 5º lugar dentre os 15 mil participantes. Diferencial: no carrinho de compras é oferecido uma outra peça, montando um combo, caso seja uma compra recorrente."
+              imgSrc={imgHC}
+              icons={[iconReact,iconTypescript,iconAws,iconVtex]}
+              gitLink="https://github.com/BrunoSobralDEV/final-challenge-hc"
+            />  
+          </div>
+          <div style={{height: '60vh'}}>
+            <Card 
+                title="dtMoney" 
+                label=""
+                imgSrc={imgDM}
+                icons={[iconReact,iconTypescript]}
+                gitLink="https://github.com/BrunoSobralDEV/dtMoney"
+              />
+          </div>
+          <div style={{height: '60vh'}}>
+            <Card 
+                title="Feedback Widget" 
+                label=""
+                imgSrc={imgFeedback}
+                icons={[iconReact, iconTypescript,iconTailwind, iconPhosphor]}
+                gitLink="https://github.com/BrunoSobralDEV/dtMoney"
+              />
+          </div>
         </Carousel>
       </div>
-      <p>Oi</p>
     </StyledDiv>
   )
 }

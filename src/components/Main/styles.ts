@@ -14,6 +14,12 @@ export const StyledApp = styled.section`
 
   transition: 1s;
   align-items: center;
+
+  overflow-x: hidden;
+  
+  @media (max-width: 400px) {
+    padding: 0;
+  }
 `
 
 export const StyledMain = styled.main`
@@ -33,8 +39,9 @@ export const StyledMain = styled.main`
     }
 
     @media (max-width: 800px) {
-      min-width: 357px;
+      width: 357px;
       height: 164px;
+      display: none;
 
       img {
         height: 150px;
@@ -97,6 +104,7 @@ export const StyledMain = styled.main`
     @media (max-width: 800px) {
       max-width: 357px;
       margin-left: 0px;
+      margin-top: 100px;
 
       .desktop {
         display: none;

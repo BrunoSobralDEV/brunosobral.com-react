@@ -37,10 +37,8 @@ export const StyledFooter = styled.footer`
 
 
   @media (max-width: 800px) {
-    padding: 20px 15px;
-
-    .desktop {
-      display: none;
-    }
+    padding: 0 5px;
+    flex-direction: column;
+    position: relative;
   }
 `
