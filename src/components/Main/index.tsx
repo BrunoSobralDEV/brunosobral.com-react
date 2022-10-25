@@ -44,9 +44,6 @@ export default function Main() {
             <img src={iconReact} alt="react-icon" style={{width: '35px', height: '39.5px'}} />
             <img src={iconTypescript} alt="typescript-icon" style={{width: '35px', height: '39.5px'}} />
             <img src={iconNode} alt="node-icon" style={{width: '35px', height: '39.5px'}} />
-            <img src={iconMui} alt="node-icon" style={{width: '35px', height: '39.5px'}} />
-            <img src={iconRb} alt="node-icon" style={{width: '35px', height: '39.5px'}} />
-            <img src={iconSc} alt="node-icon" style={{width: '35px', height: '39.5px'}} />
           </div>
 
           <div className="btn-group">
